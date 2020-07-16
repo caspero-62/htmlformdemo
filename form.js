@@ -5,8 +5,8 @@ $('#form').submit(function(e){
         type: 'POST',
         url: 'form.php',
         data: $('#form').serialize(),
-        success: function() {
-            alert('Thank You!, Message received')
+        success: function(data) {
+            alert('Thank You!, Message received', data)
         },
         error: function() {
             alert('Oops! an error occured')
