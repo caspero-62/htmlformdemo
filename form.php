@@ -12,11 +12,10 @@ if($dbconnect->connect_error) {
 }
 
 if(isset($_POST)) {
-    $name=$_POST['name'];
     $email=$_POST['email'];
     $message=$_POST['message'];
 
-    $query = "INSERT INTO `form` (`name`, `email`, `message`) VALUES ('{$name}', '{$email}', '{$message}')";
+    $query = "INSERT INTO `form` (`email`, `message`) VALUES ('{$email}', '{$message}')";
 
     if (!mysqli_query($dbconnect, $query)) {
         die('An error occured.');
