@@ -1,0 +1,15 @@
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input,textarea{
+    margin-bottom: 5%;
+}
