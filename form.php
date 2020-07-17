@@ -15,7 +15,7 @@ if(isset($_POST['submit'])) {
     $email=$_POST['email'];
     $message=$_POST['message'];
 
-    $query = "INSERT INTO `form` (`email`, `message`) VALUES ('{$email}', '{$message}')";
+    $query = "INSERT INTO form (`email`, `message`) VALUES ('{$email}', '{$message}')";
 
     if (!mysqli_query($dbconnect, $query)) {
         die('An error occured.');
